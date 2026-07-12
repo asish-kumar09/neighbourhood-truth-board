@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f9fafb;
+  color: #111827;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #2563eb;
+}
+
+/* Mobile nav fix */
+@media (max-width: 600px) {
+  nav {
+    gap: 8px !important;
+    padding: 0.6rem 1rem !important;
+  }
+
+  nav span {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  nav button {
+    font-size: 12px !important;
+    padding: 4px 10px !important;
+  }
+}
