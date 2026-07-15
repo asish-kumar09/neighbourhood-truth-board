@@ -31,7 +31,7 @@ export default function ComplaintsMap() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/complaints")
+    axios.get("https://neighbourhood-truth-board-production.up.railway.app/api/complaints")
       .then(res => setComplaints(res.data))
       .catch(err => console.error(err))
       .finally(() => setLoading(false));

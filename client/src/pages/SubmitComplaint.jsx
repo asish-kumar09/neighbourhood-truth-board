@@ -13,7 +13,7 @@ export default function SubmitComplaint() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/complaints", {
+      await axios.post("https://neighbourhood-truth-board-production.up.railway.app/api/complaints", {
         ...form,
         latitude: 20.2961,
         longitude: 85.8245
